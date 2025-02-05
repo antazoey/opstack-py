@@ -1,0 +1,40 @@
+# ~~ Custom Networks ~~
+
+[[tool.ape.networks.custom]]
+name = "mainnet"
+ecosystem = "base"
+base_ecosystem_plugin = "optimism"
+chain_id = 8453
+
+[[tool.ape.networks.custom]]
+name = "mainnet"
+ecosystem = "zora"
+base_ecosystem_plugin = "optimism"
+chain_id = 7777777
+
+[[tool.ape.networks.custom]]
+name = "mainnet"
+ecosystem = "mode"
+base_ecosystem_plugin = "optimism"
+chain_id = 34443
+
+[[tool.ape.networks.custom]]
+name = "mainnet"
+ecosystem = "fraxtal"
+base_ecosystem_plugin = "optimism"
+chain_id = 252
+
+
+# ~~ RPC Config ~~
+
+[tool.ape.node.base.mainnet]
+uri = "https://base.llamarpc.com"
+
+[tool.ape.node.zora.mainnet]
+uri = "https://rpc.zora.energy"
+
+[tool.ape.node.mode.mainnet]
+uri = "https://1rpc.io/mode"
+
+[tool.ape.node.fraxtal.mainnet]
+uri = "https://rpc.frax.com"
